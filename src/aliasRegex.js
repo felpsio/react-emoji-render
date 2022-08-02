@@ -23,7 +23,7 @@ function getAliasesRegex() {
     // match both (and later distinguish between)
     // * ascii aliases like :o
     // * full emoji like :open_mouth:
-    `[\s^](${edgeCases})?(${names}|:)([${allowedAliasCharacters}]*:)?[$\s]`,
+    `[ ^](${edgeCases})?(${names}|:)([${allowedAliasCharacters}]*:)?[ $]`,
     "g"
   );
 }
