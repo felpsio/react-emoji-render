@@ -215,4 +215,9 @@ describe("toArray", () => {
     const content = toArray("<3: :1<3 <31:");
     expect(content).toMatchSnapshot();
   });
+
+  test("chrome url", () => {
+    const content = toArray("chrome://settings/content/notifications");
+    expect(content).toMatchObject(["chrome://settings/content/notifications"]);
+  });
 });

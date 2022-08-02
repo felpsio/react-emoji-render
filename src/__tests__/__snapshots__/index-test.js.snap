@@ -96,7 +96,7 @@ exports[`Emoji aliases with skin tone modifiers 1`] = `
 exports[`Emoji ascii aliases 1`] = `
 <span
   className="">
-  That\'s awesome 
+  That's awesome 
   <span
     className={undefined}
     style={
@@ -536,7 +536,7 @@ exports[`Emojione aliases with skin tone modifiers 1`] = `
 exports[`Emojione ascii aliases 1`] = `
 <span
   className="">
-  That\'s awesome 
+  That's awesome 
   <img
     alt="😃"
     className={undefined}
@@ -975,7 +975,7 @@ exports[`EmojioneV4 aliases with skin tone modifiers 1`] = `
 exports[`EmojioneV4 ascii aliases 1`] = `
 <span
   className="">
-  That\'s awesome 
+  That's awesome 
   <img
     alt="😃"
     className={undefined}
@@ -1414,7 +1414,7 @@ exports[`Twemoji aliases with skin tone modifiers 1`] = `
 exports[`Twemoji ascii aliases 1`] = `
 <span
   className="">
-  That\'s awesome 
+  That's awesome 
   <img
     alt="😃"
     className={undefined}
@@ -1808,6 +1808,31 @@ Array [
     }>
     👌🏿
 </span>,
+]
+`;
+
+exports[`toArray chrome 1`] = `
+Array [
+  "chrome",
+  <span
+    className={undefined}
+    style={
+        Object {
+            "height": "1em",
+            "margin": "0 .05em 0 .1em",
+            "verticalAlign": "-0.1em",
+            "width": "1em",
+          }
+    }>
+    😕
+</span>,
+  "/settings/content/notifications",
+]
+`;
+
+exports[`toArray chrome url 1`] = `
+Array [
+  "chrome://settings/content/notifications",
 ]
 `;
 

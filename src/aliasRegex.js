@@ -10,7 +10,10 @@ const names = flatten(
   Object.keys(asciiAliases).map(name => {
     return asciiAliases[name].map(escapeStringToBeUsedInRegExp);
   })
-).sort().reverse().join("|"); // reverse sort for most specific match
+)
+  .sort()
+  .reverse()
+  .join("|"); // reverse sort for most specific match
 
 const edgeCases = [startOfURL].join("|");
 
@@ -20,7 +23,7 @@ function getAliasesRegex() {
     // match both (and later distinguish between)
     // * ascii aliases like :o
     // * full emoji like :open_mouth:
-    `(${edgeCases})?(${names}|:)([${allowedAliasCharacters}]*:)?`,
+    `[\s^](${edgeCases})?(${names}|:)([${allowedAliasCharacters}]*:)?[$\s]`,
     "g"
   );
 }
